@@ -4,7 +4,7 @@ import { useDrag } from 'react-dnd';
 const FoodItem = ({ name, type, imageSrc }) => {
   const [{ isDragging }, drag] = useDrag({
     type: 'FOOD_ITEM',
-    item: { name, type },
+    item: { name, type ,imageSrc},
     collect: monitor => ({
       isDragging: !!monitor.isDragging(),
     }),

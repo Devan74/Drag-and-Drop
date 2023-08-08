@@ -19,7 +19,7 @@ const FoodList = ({ title, type, items, onDrop }) => {
         backgroundColor: isOver ? 'lightgray' : 'white',
         width:'180px',
         height:'350px',
-        margin:'5px',
+        margin:'10px',
         display:'flex',
         flexWrap:'wrap'
       }}
@@ -27,8 +27,8 @@ const FoodList = ({ title, type, items, onDrop }) => {
       <h4>{title}</h4>
       {items.map((item, index) => (
         <div key={index}>
-          <img src={item.imageSrc} alt={item.name} style={{ width: '50px', height: '50px',border: '1px solid #000100',margin:'1px' }} />
-          {console.log(item)}
+          <img src={item.imageSrc} alt={item.name} style={{ width: '70px', height: '70px',border: '1px solid #000100',margin:'8px' }} />
+          {/* {console.log(item)} */}
         </div>
       ))}
     </div>
